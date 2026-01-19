@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    display: block;
+}
+.first{
+    place-items: center;
+}
+.first h1{
+    font-size: 50px;
+}
+.first h2{
+    margin-bottom: 2px;
+}
+.first a{
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+    padding: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    transition: 200ms;
+}
+.first a:hover{
+    background-color: black;
+    color: white;
+    transition: 200ms;
+}
+.first p1{
+    font-size: 13px;
+    margin: 0;
+}

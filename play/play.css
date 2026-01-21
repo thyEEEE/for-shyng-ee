@@ -9,3 +9,15 @@ body{
 .new{
     text-align: center;
 }
+.new h1{
+    font-size: 60px;
+    margin-bottom: 4px;
+}
+.new h2{
+    font-size: 25px;
+    margin-top: 0px;
+}
+.new h3{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}

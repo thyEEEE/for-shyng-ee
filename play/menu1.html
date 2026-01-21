@@ -8,20 +8,17 @@
 </head>
 <body>
     <div class="new">
-        <h1>第一关</h1>
+        <h1>第二关</h1>
         <h2>看看你了不了解我</h2>
         <div id="game">
             <form onsubmit="check(); return false;">
-                <h3>我的生日是几时</h3>
-                <input type="date" id="birthday" value="2008-03-26"><input type="submit" value="确认" onsubmit="check(); return;">
-
-                <!-- <h3>我最喜欢的游戏</h3>
-                <select>
+                <h3>我最喜欢的游戏</h3>
+                <select id="favGame">
                     <option>PUBG</option>
                     <option>Minecraft</option>
                     <option>Apex</option>
                     <option>Valorant</option>
-                </select><input type="submit" value="确认"> -->
+                </select><input type="submit" value="确认">
                 
                 
                 
@@ -29,19 +26,17 @@
         </div>
     </div>
     <script>
-        console.log(1)
         function check(){
-            let input = document.getElementById("birthday").value;            
-            if(input == "2008-03-26"){
+            let e = document.getElementById("favGame");
+            let input = e.options[e.selectedIndex].text;
+            if(input == "Apex"){
+
                 alert("答对了！前往下一关");
-                document.location.replace("menu1.html")
+                document.location.replace("menu2.html")
             }else{
                 alert("答错了！再来")
             }
-            
         }
-        
-        // if(input == "")
     </script>
 </body>
 </html>

@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="play.css"/>
+    <title>for shyngee</title>
 </head>
 <body>
-    
+    <div class="new">
+        <h1>最后一关</h1>
+        <h2>最难！！！</h2>
+        <div id="game">
+            <form onsubmit="check(); return false;">
+                <h3>猜猜我是谁🥰</h3>
+                <select id="favGame">
+                    <option>你的老公</option>
+                    <option>你的bobo</option>
+                    <option>你的爱人</option>
+                </select><input type="submit" value="确认">
+            </form>
+        </div>
+    </div>
+     <script>
+        function check(){
+            let e = document.getElementById("favGame");
+            let input = e.options[e.selectedIndex].text;
+            alert(`嘿嘿我是${input}`)
+            document.location.replace("end.html")
+        }
+    </script>
 </body>
 </html>

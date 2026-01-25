@@ -13,7 +13,7 @@
         <div id="game">
             <form onsubmit="check(); return false;">
                 <h3>我的生日是几时</h3>
-                <input type="date" id="birthday" value="2008-03-26"><input type="submit" value="确认" onsubmit="check(); return;">
+                <input type="date" id="birthday"><input type="submit" value="确认" onsubmit="check(); return;">
 
                 <!-- <h3>我最喜欢的游戏</h3>
                 <select>
@@ -29,7 +29,6 @@
         </div>
     </div>
     <script>
-        console.log(1)
         function check(){
             let input = document.getElementById("birthday").value;            
             if(input == "2008-03-26"){
